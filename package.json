@@ -1,0 +1,32 @@
+{
+  "name": "quizverss-api",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "author": "ydainna",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev ts-node src/main.ts",
+    "start": "cross-env NODE_ENV=production ts-node src/main.ts"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.0",
+    "@hapi/inert": "^7.0.1",
+    "dotenv": "^16.0.3",
+    "joi": "^17.7.1",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.40",
+    "mongoose": "^6.9.1",
+    "tslog": "^4.7.2",
+    "typescript": "^4.9.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/hapi__hapi": "^21.0.0",
+    "@types/node": "^18.13.0",
+    "@types/uuid": "^9.0.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
+  }
+}
