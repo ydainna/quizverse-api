@@ -855,10 +855,10 @@ ts-node@^10.9.1:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
-tslog@^4.7.5:
-  version "4.7.5"
-  resolved "https://registry.yarnpkg.com/tslog/-/tslog-4.7.5.tgz#c8651e18e178005764d7db84f0d4e04bbdbf72b4"
-  integrity sha512-3n3ZsDfRq4fmoGUo8mQ+1ZrTn1Ujdxno6qHNRjRqHPnDYk6VRdnmluAeT7HqRX72YA0pZgj1eU3DZAyu9dwKCA==
+tslog@^4.8.1:
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/tslog/-/tslog-4.8.1.tgz#d9053163acd1954d1060f28284ba2ab0fe6f3762"
+  integrity sha512-WT+irgsc2KZBGdErWCiJo+6bt/Xl7TioSt3s/0y8wk3FVV2ogG0NhCcsp36qmBbZm3kWbBr6BfNCd8fSf/oa8g==
 
 typescript@^4.9.5:
   version "4.9.5"
