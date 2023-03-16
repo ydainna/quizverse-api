@@ -15,7 +15,7 @@
     "joi": "^17.8.4",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.41",
-    "mongoose": "^7.0.1",
+    "mongoose": "^7.0.2",
     "tslog": "^4.8.2",
     "typescript": "^4.9.5",
     "uuid": "^9.0.0"
