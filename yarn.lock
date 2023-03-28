@@ -96,10 +96,10 @@
   resolved "https://registry.yarnpkg.com/@hapi/file/-/file-3.0.0.tgz#f1fd824493ac89a6fceaf89c824afc5ae2121c09"
   integrity sha512-w+lKW+yRrLhJu620jT3y+5g2mHqnKfepreykvdOcl9/6up8GrQQn+l3FRTsjHTKbkbfQFkuksHpdv2EcpKcJ4Q==
 
-"@hapi/hapi@*", "@hapi/hapi@^21.3.0":
-  version "21.3.0"
-  resolved "https://registry.yarnpkg.com/@hapi/hapi/-/hapi-21.3.0.tgz#029f372ec408e129a072b8ab145841a138f1bab5"
-  integrity sha512-D0g78N1GlbhYteuDFEL3yA3zv/MMQZC9q7U1bblwGNdh1M4oIuy5u3eEeiBSdy7HY8oWhwPCnr0s9287MIctzg==
+"@hapi/hapi@*", "@hapi/hapi@^21.3.1":
+  version "21.3.1"
+  resolved "https://registry.yarnpkg.com/@hapi/hapi/-/hapi-21.3.1.tgz#adcb1663a82ca58729b5f657ed5726d26329dcd1"
+  integrity sha512-b6sv36QnKO1gDYDHgdJ91ZTFWlZ3zeOnLZuFVMxxBEkUXQDn1azbYlv5lH0nKhRcD6IohCDy4/tNyzpXj7QdSA==
   dependencies:
     "@hapi/accept" "^6.0.1"
     "@hapi/ammo" "^6.0.1"
@@ -128,11 +128,6 @@
     "@hapi/boom" "^10.0.1"
     "@hapi/hoek" "^11.0.2"
     "@hapi/validate" "^2.0.1"
-
-"@hapi/hoek@^10.0.0":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-10.0.1.tgz#ee9da297fabc557e1c040a0f44ee89c266ccc306"
-  integrity sha512-CvlW7jmOhWzuqOqiJQ3rQVLMcREh0eel4IBnxDx2FAcK8g7qoJRQK4L1CPBASoCY6y8e6zuCy3f2g+HWdkzcMw==
 
 "@hapi/hoek@^11.0.2":
   version "11.0.2"
@@ -194,16 +189,7 @@
     "@hapi/hoek" "^11.0.2"
     "@hapi/nigel" "^5.0.1"
 
-"@hapi/podium@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@hapi/podium/-/podium-5.0.0.tgz#b32fba98a0ebb0a1ee233cb77339da84322d77ae"
-  integrity sha512-SbhFdu8LOIscMS82Zsoj9abcllAqbK4qBgznzJ9yr+vS2j1EomJTukkhxb76Lml0BHCd4Hn79F+3EQg06kcf8g==
-  dependencies:
-    "@hapi/hoek" "^10.0.0"
-    "@hapi/teamwork" "^6.0.0"
-    "@hapi/validate" "^2.0.0"
-
-"@hapi/podium@^5.0.1":
+"@hapi/podium@^5.0.0", "@hapi/podium@^5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@hapi/podium/-/podium-5.0.1.tgz#f292b4c0ca3118747394a102c6c3340bda96662f"
   integrity sha512-eznFTw6rdBhAijXFIlBOMJJd+lXTvqbrBIS4Iu80r2KTVIo4g+7fLy4NKp/8+UnSt5Ox6mJtAlKBU/Sf5080TQ==
@@ -273,7 +259,7 @@
   dependencies:
     "@hapi/hoek" "^11.0.2"
 
-"@hapi/validate@^2.0.0", "@hapi/validate@^2.0.1":
+"@hapi/validate@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@hapi/validate/-/validate-2.0.1.tgz#45cf228c4c8cfc61ba2da7e0a5ba93ff3b9afff1"
   integrity sha512-NZmXRnrSLK8MQ9y/CMqE9WSspgB9xA41/LlYR0k967aSZebWr4yNrpxIbov12ICwKy4APSlWXZga9jN5p6puPA==
