@@ -12,7 +12,7 @@
     "@hapi/hapi": "^21.3.1",
     "@hapi/inert": "^7.1.0",
     "dotenv": "^16.0.3",
-    "joi": "^17.9.1",
+    "joi": "^17.9.2",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.43",
     "mongoose": "^7.0.4",
