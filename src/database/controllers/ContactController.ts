@@ -1,5 +1,4 @@
 import ContactModel from "../models/ContactModel";
-import moment from "moment-timezone";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -14,7 +13,9 @@ export namespace ContactController {
       name,
       mail,
       message,
-      date: moment().tz("Europe/Paris").format("YYYY-MM-DD HH:mm:ss"),
+      date: new Date()
+        .toLocaleString("fr-FR", { timeZone: "Europe/Paris", hour12: false })
+        .replace(/(\d{2})\/(\d{2})\/(\d{4}), (\d{2}:\d{2}:\d{2})/, "$3-$2-$1 $4"),
     });
     await contact.save();
   }

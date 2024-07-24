@@ -1,7 +1,6 @@
 import { Request, ResponseToolkit, Server } from "@hapi/hapi";
 import { ScoreController } from "../database/controllers/ScoreController";
 import Joi from "joi";
-import moment from "moment-timezone";
 import { Constants } from "../utils/constants";
 
 export const initScoresRoutes = async (server: Server) => {
@@ -12,7 +11,7 @@ export const initScoresRoutes = async (server: Server) => {
       // Get all easy score from the database
       const easyScore = await ScoreController.findAllEasyScore({ _id: 0, __v: 0 });
       // Sort by date
-      easyScore.sort((a, b) => (moment(a.date, "YYYY-MM-DD HH:mm:ss").isBefore(moment(b.date, "YYYY-MM-DD HH:mm:ss")) ? 1 : -1));
+      easyScore.sort((a, b) => (new Date(a.date) < new Date(b.date) ? 1 : -1));
       // Limit to 5
       return easyScore.slice(0, 5);
     },
@@ -46,7 +45,7 @@ export const initScoresRoutes = async (server: Server) => {
       // Get all hard score from the database
       const hardScore = await ScoreController.findAllHardScore({ _id: 0, __v: 0 });
       // Sort by date
-      hardScore.sort((a, b) => (moment(a.date, "YYYY-MM-DD HH:mm:ss").isBefore(moment(b.date, "YYYY-MM-DD HH:mm:ss")) ? 1 : -1));
+      hardScore.sort((a, b) => (new Date(a.date) < new Date(b.date) ? 1 : -1));
       // Limit to 5
       return hardScore.slice(0, 5);
     },

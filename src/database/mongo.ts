@@ -1,29 +1,28 @@
 import mongoose from "mongoose";
-import { getLogger } from "../utils/getLogger";
 
 export namespace Database {
   export async function connect(): Promise<typeof mongoose> {
-    const log = getLogger("Database");
     mongoose.connection.on("connecting", () => {
-      log.info("Connecting...");
+      console.info("Connecting...");
     });
 
     mongoose.connection.on("reconnecting", () => {
-      log.warn("Reconnecting...");
+      console.warn("Reconnecting...");
     });
 
     mongoose.connection.on("connected", () => {
-      log.info("Connected!");
+      console.info("Connected!");
     });
 
     mongoose.connection.on("reconnected", () => {
-      log.info("Reconnected!");
+      console.info("Reconnected!");
     });
 
     mongoose.connection.on("disconnected", () => {
-      log.error("Disconnected!");
+      console.error("Disconnected!");
     });
 
+    mongoose.set("strictQuery", true);
     return mongoose.connect(process.env.MONGODB_URL as string);
   }
 }
