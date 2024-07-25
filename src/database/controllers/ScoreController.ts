@@ -4,10 +4,12 @@ import HardScoreModel from "../models/HardScoreModel";
 import { v4 as uuidv4 } from "uuid";
 
 export namespace ScoreController {
+  //sql = "SELECT * FROM easy_scores"
   export async function findAllEasyScore(ignore?: Object) {
     return EasyScoreModel.find({}, ignore);
   }
 
+  //sql = "INSERT INTO easy_scores (userId, name, score, date) VALUES (?, ?, ?, ?)"
   export async function createEasyScore(name: string, score: number) {
     const user = new EasyScoreModel({
       userId: uuidv4(),
@@ -20,10 +22,12 @@ export namespace ScoreController {
     await user.save();
   }
 
+  //sql = "SELECT * FROM hard_scores
   export async function findAllHardScore(ignore?: Object) {
     return HardScoreModel.find({}, ignore);
   }
 
+  //sql = "INSERT INTO hard_scores (userId, name, score, date) VALUES (?, ?, ?, ?)"
   export async function createHardScore(name: string, score: number) {
     const user = new HardScoreModel({
       userId: uuidv4(),
